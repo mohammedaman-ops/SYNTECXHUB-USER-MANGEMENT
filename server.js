@@ -16,7 +16,7 @@ if (!fs.existsSync(uploadDir)) { fs.mkdirSync(uploadDir, { recursive: true }); }
 app.use('/images', express.static('public/images'));
 
 
-mongoose.connect("mongodb+srv://mohammedaman6387_db_user:shamna2079@usermanagement.gwk3bn0.mongodb.net/user_management_db")
+mongoose.connect("mongodb+srv://mohammedaman6387_db_user:password_db@usermanagement.gwk3bn0.mongodb.net/user_management_db")
     .then(() => console.log("✅ MongoDB Connected"));
 
 const User = mongoose.model('User', new mongoose.Schema({
